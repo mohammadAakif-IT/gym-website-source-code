@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoldenEagleFitness | join now</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(163, 19, 19);
+        margin: 0px;
+        padding: 0px;
+        background: url('join2.jpg') repeat-y;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: auto;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    
+    }
+
+    .mid {
+       
+        margin: 29px auto;
+        text-align: center; 
+        padding: 3px;
+         width: 150px;
+       
+      
+    }
+ 
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+   
+    .navbar li a.active {
+        text-decoration: none;
+        color: rgb(65, 21, 21);   
+       text-align: center;
+       padding: 12px;
+      width: 150px;
+      height: 30px;
+      border-radius: 25px;
+     background-color: rgb(231, 79, 79);
+     border: 2px solid rgb(29, 24, 24);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    outline: none;
+
+    }
+    .navbar li a.active:hover  
+{
+background-color: transparent;
+color: #e33;
+}
+
+    .btn {
+        font-family: 'Bebas Neue', cursive;
+        margin: 0px 6px;
+        background-color: black;
+        color: white;
+        padding: 10px ;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    
+
+    .container {
+   display: inline-block;
+        border: 4px solid rgb(22, 21, 21);
+        background-color: rgb(63, 60, 60);
+        background-blend-mode: screen;
+        opacity: 60%;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 30%;
+        border-radius: 35px;
+    }
+    .container h1{
+color: rgb(214, 18, 18);
+opacity: 100%;
+    }
+    
+   
+
+    .form-group input {
+        font-family: 'Bebas Neue';
+        text-align: left;
+        display: block;
+        width: 450px;
+        padding: 7px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 100px;
+    }
+   #img1 {    height: 764px;
+    width: auto;
+    position: absolute;
+    display: inline-block;
+    top: 168px;
+    right: 53px;
+    /* border: 3px solid; */
+    color: black;
+    border-radius: 254px;
+}
+.radio{
+    color: aliceblue;
+    font-size: xx-large;
+    
+}
+   
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="#" alt="">
+            <div>GoldenEagleFitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        
+        <h1>Golden Eagle Fitness</h1>
+        <form action="connect.php" method="post">
+            <div class="form-group">
+                <input type="text" id ="fullName" name="fullName" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text"id ="gender" name="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text"id ="age" name="age" placeholder="Enter your Age">
+            </div>
+           
+            
+            <div class="form-group">
+                <input type="text"id = "email" name="email" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="number"id = "number" name="number" placeholder="Enter your Phone Number">
+            </div>
+            <div class="radio">
+                <input type="radio"id = "membership"name="membership" value="g">Gold --$8
+                <input type="radio"id = "membership" name="membership" value="p">premium --$15
+            </div>
+                
+            
+            <button class="btn">Submit</button>
+        </form>
+        
+    </div>
+    <div>
+
+    </div>
+  
+    <div class="sidebar-container--purchase-section"></div>
+   
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GOLDEN EAGLE FITNESS | GoldenEagleFitness.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+        overflow: visible;
+        scroll-behavior: smooth;
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: 99vh;
+        background: url("gym.jpg") repeat-y;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 1200px;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container ion-icon {
+        font-size: 50px;
+        color: #f5f5f5;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .container ion-icon:hover {
+        color: #e33;
+    }
+
+     .container .btn {
+
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        width: 150px;
+        height: 29px;
+        border-radius: 25px;
+        background-color: #e33;
+        color: #fff;
+        border: 2px solid rgb(214, 40, 40);
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s;
+        outline: none;
+     
+    }
+
+    .container .btn:hover {
+        background-color: transparent;
+        color: #e33;
+    }
+
+    .content {
+        width: 1200px;
+        height: 100vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    img {
+        border-radius: 4px;
+        height: 100px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .content h1 {
+        padding: 6px;
+        margin: 35px;
+        color: rgba(196, 156, 108, 0.84);
+        font-size: 70px;
+        -webkit-text-stroke: 2px black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .content h2 {
+        color: rgb(75 143 192);
+        margin: 40px;
+        padding: 6px;
+        font-size: 40px;
+        font-weight: 400;
+        -webkit-text-stroke: 2px black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .content h3 {
+        color: #fff;
+        padding: 20px;
+        font-weight: 300;
+    }
+
+    .content .btn {
+        text-decoration: none;
+        padding: 10px;
+        width: 170px;
+        height: 45px;
+        border-radius: 25px;
+        background-color: #e33;
+        color: #fff;
+        border: 2px solid #e33;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s;
+       
+
+    }
+
+    .content .btn:hover {
+        background-color: transparent;
+        color: #e33;
+    }
+
+    .service {
+        width: 100%;
+        background: rgb(39, 38, 38);
+        padding: 50px 0px;
+    }
+
+    .service .text {
+        width: 1200px;
+        margin: auto;
+        padding: 0px 0px;
+    }
+
+    .service .text h1 {
+        color: rgb(224, 26, 26);
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .service .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .service .box div {
+        width: 350px;
+        background: #a09696;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .service .box div ion-icon {
+        color: #e33;
+        font-size: 50px;
+        padding-top: 20px;
+    }
+
+    .service .box div h2 {
+        font-weight: bold;
+        cursor: pointer;
+        padding-top: 20px;
+    }
+
+    .service .box div p {
+        color: #111;
+        line-height: 25px;
+        padding: 30px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .footer-fluid {
+        width: 100%;
+        background-color: #111;
+    }
+
+    .footer {
+        width: 1200px;
+        margin: auto;
+        padding: 50px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer p {
+        color: rgb(194, 37, 37);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #e33;
+    }
+
+    .footer ion-icon {
+        color: #fff;
+        font-size: 25px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .footer ion-icon:hover {
+        color: #e33;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+             <ion-icon name="menu">
+            </ion-icon>
+           <a class="btn" href="joinpage.html">JOIN NOW</a>
+
+         
+        </div>
+        <div class="content">
+            <img src="ge.png" alt="center">
+            <h1>GOLDEN EAGLE FITNESS</h1>
+            <h2>GYM and FITNESS LOUNGE</h2><br>
+
+            <a class="btn" href="#scroll">OUR SERVICES</a>
+            <div id="scroll"></div>
+
+        </div>
+    </div>
+    <div class="service">
+        <div class="text">
+            <h1>OUR SERVICES</h1>
+            <div class="box">
+                <div>
+                    <ion-icon name="person"></ion-icon>
+                    <h2>Resistence Training</h2>
+                    <p>This training method improves strength, power or muscular endurance.
+                        The area of fitness developed is determined by the resistance,
+                        repetitions, and sets performed.
+                        barbells, pulleys, body weight or equipment such as,
+                        resistance bands or sandbags</p>
+                        <img src="Resistance-Training.jpg" alt="center">
+                </div>
+                <div>
+                    <ion-icon name="bicycle"></ion-icon>
+                    <h2>Strength Training</h2>
+                    <p>Strength training on a bike is important to improve your speed and power or prevent injury,
+                        This training focuses on strength and pedaling efficiency in climbs.
+                        • Concentrate on smooth pedal strokes; relax the upper body, keeping it “quiet”.
+                        Relax the hands and neck</p>
+                        <img src="strength.jpg" alt="center">
+                </div>
+                <div>
+                    <ion-icon name="tennisball"></ion-icon>
+                    <h2>Sports Training</h2>
+                    <p>Here we outline sprint training programs sprinting technique for the
+                        100m, 200m, and 400m with practice drills,training sessions,
+                        technical advice and strength training and Plyometric training involves quick, powerful,
+                        jumping and bounding movements</p>
+                        <img src="sport.jfif" alt="center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-fluid">
+        <div class="footer">
+            <p> All Right Reserved - Made By Mohd.Aakif </p>
+            <div class="icon">
+                <a href="https://www.facebook.com/akif.zubairy/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a href="https://www.instagram.com/_aakif__/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a> 
+                <a href="https://twitter.com/aakif_zubairy" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/aakif-zubairy-811204235/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
